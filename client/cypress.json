@@ -1,0 +1,12 @@
+{
+	"baseUrl": "http://localhost:3000/",
+	"ignoreTestFiles": "**/examples/*",
+	"viewportSize": {
+		"width": 1366,
+		"height": 768
+	},
+  "chromeWebSecurity": false,
+  "hosts": {
+    "*.localhost": "127.0.0.1"
+  }
+}

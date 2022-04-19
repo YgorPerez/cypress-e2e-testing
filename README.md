@@ -1,5 +1,5 @@
 # cypress-e2e-testing
-Complete testing of an app using cypress
+Complete e2e functional testing of an app using cypress
 
 ## How to setup 
 

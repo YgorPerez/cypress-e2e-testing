@@ -1,2 +1,8 @@
 .vscode
-
+.history
+server/node_modules/
+client/node_modules/
+client/.editorconfig
+client/package-lock.json
+server/package-lock.json
+client/cypress/integration/examples/

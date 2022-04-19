@@ -2,23 +2,19 @@
 
 const { get } = require("https");
 
-beforeEach(() => {
-  cy.visit("/accomplishments");
-});
-
 function clickSubmit() {
   cy.get(".Accomplishment-btn").contains("Submit Accomplishment").click();
 }
 
-function addTitle(title) {
+function typeTitle(title) {
   cy.get("input[placeholder='Title']").type(`${title}`);
 }
 
-function addDescription(description) {
+function typeDescription(description) {
   cy.get("[data-cy=accomplishment-input]").type(description);
 }
 
-function chechCheckbox() {
+function checkCheckbox() {
   cy.get("[data-cy=accomplishment-checkbox]").click();
 }
 
@@ -27,11 +23,11 @@ function addAccomplishment(
   description = "new description",
   checkbox = true
 ) {
-  if (title !== "") addTitle(title);
+  if (title !== "") typeTitle(title);
 
-  if (description !== "") addDescription(description);
+  if (description !== "") typeDescription(description);
 
-  if (checkbox) chechCheckbox();
+  if (checkbox) checkCheckbox();
 
   clickSubmit();
 }
@@ -41,6 +37,10 @@ function getError(msg) {
 }
 
 describe("Accomplishment dashboard", () => {
+  beforeEach(() => {
+    cy.visit("/accomplishments");
+  });
+
   it("Should be able to add a new accomplishment", () => {
     addAccomplishment();
     cy.get("[data-cy=accomplishment-input]").should("not.exist");
@@ -60,7 +60,7 @@ describe("Accomplishment dashboard", () => {
       cy.get(".Accomplishment-error-container").should("not.exist");
     });
 
-    it("Should render with an empty form", () => {});
+    it("Should render with an empty form");
 
     it("Should return with an empty form after adding and clicking go back", () => {
       addAccomplishment();

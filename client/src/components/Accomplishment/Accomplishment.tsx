@@ -22,7 +22,7 @@ function Accomplishment() {
     }
 
     try {
-      await axios.post("http://localhost:4000", {
+      await axios.post("http://localhost:4000/accomplishment", {
         title,
         accomplishment,
       });

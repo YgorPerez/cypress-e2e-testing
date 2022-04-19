@@ -29,7 +29,7 @@ function Rewards() {
   const fetchRewards = async () => {
     const response = await axios.get("http://localhost:4000/rewards");
     console.log(response);
-    setReward(response.data);
+      setReward(response.data);
   };
 
   return (
@@ -44,13 +44,22 @@ function Rewards() {
         >
           <option>All</option>
           <option>January</option>
-          <option>Feburary</option>
+          <option>February</option>
           <option>March</option>
         </select>
       </div>
       <ul className="Rewards-cards-container">
         {filteredRewards.map((reward) => {
-          return <li className="Rewards-cards-list" data-cy={reward.month}>{reward.reward}</li>;
+          return (
+            <li
+              key={reward.id}
+              className="Rewards-cards-list"
+              data-month={reward.month}
+              data-id={reward.id}
+            >
+              {reward.reward}
+            </li>
+          );
         })}
       </ul>
     </div>

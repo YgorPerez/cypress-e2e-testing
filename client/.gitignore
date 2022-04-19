@@ -1,4 +1,0 @@
-node_modules/
-.editorconfig
-package-lock.json
-cypress/integration/examples/

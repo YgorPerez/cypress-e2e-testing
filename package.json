@@ -9,6 +9,7 @@
   },
   "scripts": {
     "client": "cd client && npm start",
+    "build": "cd client && npm run build",
     "server": "cd server && npm start",
     "start": "concurrently \"npm run client\" \"npm run server\"",
     "server-dev": "cd server && npm run dev",

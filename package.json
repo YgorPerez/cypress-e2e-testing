@@ -9,11 +9,12 @@
   },
   "scripts": {
     "client": "cd client && npm start",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "start": "concurrently \"npm run client\" \"node index.js\"",
-    "cypress:open": "cd client && npm run cypress:start:wait -- \"cypress open\"",
-    "cypress:run": "cd client && npm run cypress:start:wait -- \"cypress run\""
+    "server": "cd server && npm start",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "server-dev": "cd server && npm run dev",
+    "dev": "concurrently \"npm run client\" \"npm run server-dev\"",
+    "cypress:open": "concurrently \"npm run server-dev\" \"cd client && npm run cypress:open\"",
+    "cypress:run": "concurrently \"npm run server-dev\" \"cd client && npm run cypress:run\""
   },
   "keywords": [],
   "author": "Ygor Perez <perezygor@gmail.com>",

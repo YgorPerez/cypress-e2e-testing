@@ -85,6 +85,12 @@ describe("Rewards dashboard", () => {
     cy.visit("/rewards");
   });
 
+  it("Should be the same content bettween the dom and the response", () => {
+    const domList = getDomList();
+    const responseList = getResponseByMonth();
+    expect(arraysEqual(domList, responseList)).to.be.true;
+  });
+  
   describe("Should display rewards", () => {
     it("Sould display a list of rewards", () => {
       console.debug(getResponseByMonth());
@@ -114,11 +120,6 @@ describe("Rewards dashboard", () => {
     });
   });
 
-  it("Should be the same content bettween the dom and the response", () => {
-    const domList = getDomList();
-    const responseList = getResponseByMonth();
-    expect(arraysEqual(domList, responseList)).to.be.true;
-  });
 
   describe("Should render the right month ", () => {
     it("Should change months to the selected", () => {

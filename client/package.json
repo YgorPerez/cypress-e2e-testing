@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -27,14 +23,18 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "e2e": "cypress run"
+    "cypress:start:app": "react-scripts -r @cypress/instrument-cra start",
+    "cypress:start:wait": "start-server-and-test cypress:start:app http://localhost:3000",
+    "cypress:open": "npm run cypress:start:wait -- \"cypress open\"",
+    "cypress:run": "npm run cypress:start:wait -- \"cypress run\"",
+    "eject": "react-scripts eject"
+  },
+  "nyc": {
+    "exclude": "src/reportWebVitals.ts"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -51,8 +51,11 @@
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.12",
+    "@cypress/instrument-cra": "^1.4.0",
     "cypress": "^9.5.4",
     "cypress-eslint-preprocessor": "^1.2.2",
-    "nyc": "^15.1.0"
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "nyc": "^15.1.0",
+    "start-server-and-test": "^1.14.0"
   }
 }

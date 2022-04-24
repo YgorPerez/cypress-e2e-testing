@@ -1,12 +1,24 @@
 {
-	"baseUrl": "http://localhost:3000/",
-	"ignoreTestFiles": ["**/examples/*", "**/elements/*"],
-	"viewportSize": {
-		"width": 1366,
-		"height": 768
-	},
+  "baseUrl": "http://localhost:3000/",
+  "ignoreTestFiles": ["**/examples/*", "**/elements/*"],
+  "integrationFolder": "cypress/integration",
+  "fixturesFolder": "cypress/fixtures",
+  "supportFile": "cypress/support/index.js",
+  "pluginsFile": "cypress/plugins/index.js",
+  "viewportSize": {
+    "width": 1366,
+    "height": 768
+  },
   "chromeWebSecurity": false,
   "hosts": {
     "*.localhost": "127.0.0.1"
+  },
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "embeddedScreenshots": true,
+    "debug": true,
+    "charts": true,
+    "reportPageTitle": "custom-title"
   }
 }

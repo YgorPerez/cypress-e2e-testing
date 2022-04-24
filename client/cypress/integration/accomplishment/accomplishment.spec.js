@@ -99,15 +99,8 @@ describe("Accomplishment dashboard", () => {
       });
       it("Should display inappropriate content error message when description contains inapproriate words with mock", () => {
         cy.intercept("POST", "https://localhost:4000/accomplishments", {
-          fixtures: "accomplishment",
+          fixtures: "accomplishment"
         }).as("handleContent");
-        //   (req) => {
-        //     req.reply((res) => {
-        //       res.send({
-        //         msg: "Your content is not approriate",
-        //       });
-        //     });
-        // }
         addAccomplishment("Cool accomplishment", "giraffe");
       });
       it("Should display inappropriate content error message when description contains inapproriate words", () => {

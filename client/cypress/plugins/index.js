@@ -25,3 +25,12 @@ const cypressEslint = require('cypress-eslint-preprocessor');
 module.exports = (on) => {
     on('file:preprocessor', cypressEslint());
 };
+
+module.exports = (on, config) => {
+  require('cypress-mochawesome-reporter/plugin')(on);
+};
+
+module.exports = (on, config) => {
+  require('@cypress/code-coverage/task')(on, config);
+  return config
+};

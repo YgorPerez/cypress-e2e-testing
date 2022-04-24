@@ -14,3 +14,4 @@ client/cypress/report/
 client/cypress/screenshots/
 client/.nyc_output
 client/coverage/
+.github/

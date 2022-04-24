@@ -4,8 +4,6 @@ server/node_modules/
 node_modules/
 client/node_modules/
 client/.editorconfig
-client/package-lock.json
-server/package-lock.json
 client/cypress/downloads/
 client/cypress/integration/examples/
 client/cypress/integration/examples/

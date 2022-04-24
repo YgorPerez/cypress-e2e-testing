@@ -6,7 +6,5 @@ client/cypress/downloads/
 client/cypress/integration/examples/
 client/cypress/integration/examples/
 client/cypress/videos/
-client/cypress/report/
 client/cypress/screenshots/
 client/.nyc_output
-client/coverage/

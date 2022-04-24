@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1650837993268" clover="3.2.0">
+  <project timestamp="1650837993268" name="All files">
+    <metrics statements="79" coveredstatements="63" conditionals="32" coveredconditionals="27" methods="27" coveredmethods="24" elements="138" coveredelements="114" complexity="0" loc="79" ncloc="79" packages="7" files="9" classes="9"/>
+    <package name="src">
+      <metrics statements="11" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <file name="App.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\App.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="136" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="55" type="stmt"/>
+        <line num="17" count="55" type="stmt"/>
+      </file>
+      <file name="reportWebVitals.ts" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\reportWebVitals.ts">
+        <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="3" count="55" type="stmt"/>
+        <line num="4" count="55" type="cond" truecount="2" falsecount="2"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Accomplishment">
+      <metrics statements="27" coveredstatements="19" conditionals="14" coveredconditionals="12" methods="6" coveredmethods="5"/>
+      <file name="Accomplishment.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\Accomplishment\Accomplishment.tsx">
+        <metrics statements="27" coveredstatements="19" conditionals="14" coveredconditionals="12" methods="6" coveredmethods="5"/>
+        <line num="8" count="638" type="stmt"/>
+        <line num="9" count="638" type="stmt"/>
+        <line num="10" count="638" type="stmt"/>
+        <line num="12" count="638" type="stmt"/>
+        <line num="13" count="638" type="stmt"/>
+        <line num="14" count="638" type="stmt"/>
+        <line num="15" count="638" type="stmt"/>
+        <line num="17" count="638" type="stmt"/>
+        <line num="18" count="14" type="cond" truecount="5" falsecount="0"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="638" type="stmt"/>
+        <line num="50" count="150" type="stmt"/>
+        <line num="57" count="134" type="stmt"/>
+        <line num="64" count="10" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Habit">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Habit.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\Habit\Habit.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="15" count="348" type="stmt"/>
+        <line num="16" count="322" type="stmt"/>
+        <line num="18" count="322" type="stmt"/>
+        <line num="29" count="652" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.HabitCard">
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="HabitCard.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\HabitCard\HabitCard.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="26" count="652" type="stmt"/>
+        <line num="28" count="652" type="stmt"/>
+        <line num="30" count="108" type="stmt"/>
+        <line num="31" count="270" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="108" type="stmt"/>
+        <line num="36" count="162" type="stmt"/>
+        <line num="38" count="108" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Modal">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="Modal.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\Modal\Modal.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="25" count="1474" type="stmt"/>
+        <line num="27" count="1474" type="stmt"/>
+        <line num="28" count="1474" type="stmt"/>
+        <line num="29" count="1474" type="stmt"/>
+        <line num="31" count="1474" type="stmt"/>
+        <line num="32" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="24" type="stmt"/>
+        <line num="41" count="24" type="stmt"/>
+        <line num="42" count="24" type="stmt"/>
+        <line num="46" count="1474" type="stmt"/>
+        <line num="58" count="530" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Rewards">
+      <metrics statements="17" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
+      <file name="Rewards.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\Rewards\Rewards.tsx">
+        <metrics statements="17" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="6"/>
+        <line num="6" count="48" type="stmt"/>
+        <line num="14" count="48" type="stmt"/>
+        <line num="15" count="48" type="stmt"/>
+        <line num="17" count="48" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="25" count="48" type="stmt"/>
+        <line num="26" count="11" type="stmt"/>
+        <line num="29" count="48" type="stmt"/>
+        <line num="30" count="11" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="48" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.SideNav">
+      <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="SideNav.tsx" path="C:\Users\azaz2\OneDrive\Documentos\github\cypress-e2e-testing\client\src\components\SideNav\SideNav.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="7" count="128" type="stmt"/>
+        <line num="9" count="128" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

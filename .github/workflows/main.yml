@@ -1,8 +1,6 @@
 name: client 
 on:
   push:
-    # only run this workflow when something in the app-a changes
-    # or in this workflow file
     paths:
       - 'client/**'
       - .github/workflows/client.yml

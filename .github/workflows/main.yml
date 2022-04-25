@@ -1,21 +1,18 @@
-name: Cypress Tests
-
-on: [push]
-
+name: client 
+on:
+  push:
+    # only run this workflow when something in the app-a changes
+    # or in this workflow file
+    paths:
+      - 'client/**'
+      - .github/workflows/client.yml
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./client
+  test:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
+      - uses: actions/checkout@v2
+
+      - name: Cypress tests 🧪
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          working-directory: ./
-          start: npm start
+          project: client

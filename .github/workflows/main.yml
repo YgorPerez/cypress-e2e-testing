@@ -1,12 +1,11 @@
 name: client 
-on:
-  push:
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout 
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.4.2
         
       - name: Cypress.io
         working-directory: client/cypress

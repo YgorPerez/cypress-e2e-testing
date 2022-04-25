@@ -8,9 +8,11 @@ jobs:
   test:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Cypress tests 🧪
-        uses: cypress-io/github-action@v2
+      - name: Checkout 
+        uses: actions/checkout@v2
+        
+      - name: Cypress.io
+        working-directory: client/cypress
+      - uses: cypress-io/github-action@v2.9.7
         with:
           project: client

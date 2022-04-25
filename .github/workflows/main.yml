@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'client/**'
-      - .github/workflows/client.yml
+      - .github/workflows/main.yml
 jobs:
   test:
     runs-on: ubuntu-20.04

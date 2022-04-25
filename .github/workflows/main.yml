@@ -10,5 +10,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
         with:
-          working-directory: client/cypress
+          working-directory: client/
           start: npm run dev-all
